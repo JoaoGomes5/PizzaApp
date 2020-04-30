@@ -7,7 +7,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Jo's Pizza
+                    Jo's Pizza List
                 </div>
 
 
@@ -16,7 +16,7 @@
                 <p>{{$pizzas[$i]['type']}}</p>
 
             @endfor --}}
-
+            <h2>{{$name}} - {{$age}}</h2>
             @foreach($pizzas as $pizza)
 
                 <div>
@@ -33,7 +33,7 @@
                     <span>Last in loop</span>
 
                   @endif
-                  
+
                 </div>
 
             @endforeach

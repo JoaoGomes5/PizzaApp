@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Make a Order</a>
+                    <a href="#">Make a Order</a>
                 </div>
             </div>
         </div>

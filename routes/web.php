@@ -24,6 +24,13 @@ Route::get('/pizzas', function () {
         ['type' => 'veg supreme' , 'base' => 'queijo vegan'],
 
     ];
-     return view('pizzas' , ['pizzas' => $pizzas]);
+
+
+
+     return view('pizzas' ,
+     ['pizzas' => $pizzas,
+        'name' => request('name'),
+        'age' => request('age')
+    ]);
 
 });
