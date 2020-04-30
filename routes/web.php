@@ -20,6 +20,6 @@ Route::get('/', function () {
 
 Route::get('/pizzas', 'PizzaController@index');
 
-Route::get('/pizzas/{id}', 'PizzaController@showPizza');
+Route::get('/pizzas/{id}', 'PizzaController@showPizza ');
 
 
