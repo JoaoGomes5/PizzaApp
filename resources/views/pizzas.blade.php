@@ -71,9 +71,27 @@
                 <div class="title m-b-md">
                     Jo's Pizza
                 </div>
-            <h2> The Best Pizza </h2>
-            <h2>{{$type }} -> {{$base}} -> {{$price}}</h2>
 
+
+            {{-- @for( $i = 0 ;  $i < count($pizzas) ; $i++ )
+
+                <p>{{$pizzas[$i]['type']}}</p>
+
+            @endfor --}}
+
+            @foreach($pizzas as $pizza)
+
+                <div>
+                  {{$loop->index}}  {{$pizza['type']}} - {{$pizza['base']}}
+                  @if($loop->first)
+                    <span>- first in the loop</span>
+                  @endif
+                  @if($loop->last)
+                    <span>Last in loop</span>
+                  @endif
+                </div>
+
+            @endforeach
 
             </div>
         </div>

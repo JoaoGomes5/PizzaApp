@@ -18,14 +18,12 @@ Route::get('/', function () {
 });
 
 Route::get('/pizzas', function () {
-    $pizza = [
-        'type' => 'Carbonara' ,
-         'base' => 'chesse',
-         'price' => 10,
+    $pizzas = [
+        ['type' => 'havaiana' , 'base' => 'queijo mozzarela'],
+        ['type' => 'vulcano' , 'base' => 'queijo cheddar'],
+        ['type' => 'veg supreme' , 'base' => 'queijo vegan'],
 
-
-
-        ];
-     return view('pizzas' , $pizza);
+    ];
+     return view('pizzas' , ['pizzas' => $pizzas]);
 
 });
