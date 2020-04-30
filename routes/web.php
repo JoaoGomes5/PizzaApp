@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,3 +35,10 @@ Route::get('/pizzas', function () {
     ]);
 
 });
+
+Route::get('/pizzas/{id}', function ($id) {
+
+    return view('details', ['id' => $id]);
+});
+
+
