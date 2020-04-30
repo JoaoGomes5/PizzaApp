@@ -7,7 +7,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Pizza List - {{$id}}
+                    Pizza - {{$id}}
                 </div>
 
 
