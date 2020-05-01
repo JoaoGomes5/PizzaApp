@@ -16,7 +16,6 @@
                 <p>{{$pizzas[$i]['type']}}</p>
 
             @endfor --}}
-            <h2>{{$name}} - {{$age}}</h2>
             @foreach($pizzas as $pizza)
 
                 <div>

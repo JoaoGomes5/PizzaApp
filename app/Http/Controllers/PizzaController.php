@@ -15,16 +15,35 @@ class PizzaController extends Controller
          $pizzas = Pizza::latest()->get();
 
 
-         return view('pizzas' ,
-         ['pizzas' => $pizzas,
-            'name' => request('name'),
-            'age' => request('age')
-        ]);
+         return view('pizzas.index' ,
+         ['pizzas' => $pizzas]);
 
     }
     public function showPizza($id){
 
-        return view('details', ['id' => $id]);
+        $pizza = Pizza::findOrFail($id);
 
+        return view('pizzas.show', ['pizza' => $pizza]);
+
+    }
+
+    public function create(){
+
+        return view('pizzas.create');
+
+    }
+
+    public function store(){
+
+      $pizza = new Pizza();
+
+      $pizza->name = request('name');
+      $pizza->type = request('base');
+      $pizza->base = request('base');
+
+        $pizza->save();
+
+
+        return redirect('/')->with('message' , 'Obrigado pelo seu pedido');
     }
 }

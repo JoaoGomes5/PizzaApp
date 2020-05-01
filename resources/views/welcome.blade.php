@@ -22,9 +22,9 @@
                 <div class="title m-b-md">
                     JoJo's Pizza<br/>
                 </div>
-
+            <p class="mssg">{{session('message')}}</p>
                 <div class="links">
-                    <a href="#">Make a Order</a>
+                    <a href="/pizzas/create">Fazer Pedido</a>
                 </div>
             </div>
         </div>

@@ -19,7 +19,7 @@
     </body>
 
     <footer>
-    <i class="fa fa-copyright" aria-hidden="true">Copyright {{date('Y')}} Jo's Pizzas</i>
+    <i class="fa fa-copyright" aria-hidden="true">Copyright {{date('Y')}} JoJo's Pizza</i>
     </footer>
     </html>
 
