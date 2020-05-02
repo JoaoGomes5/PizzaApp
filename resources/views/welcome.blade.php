@@ -24,8 +24,9 @@
                 </div>
             <p class="mssg">{{session('message')}}</p>
                 <div class="links">
-                    <a href="/pizzas/create">Fazer Pedido</a>
+                    <a href="{{route('pizzas.create')}}">Fazer Pedido</a>
                 </div>
             </div>
         </div>
+
  @endsection

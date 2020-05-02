@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.app')
 
     @section('content')
 
@@ -21,10 +21,22 @@
                         <option value="classica">Classica</option>
                         <option value="fina">Fina</option>
                     </select>
+                    <fieldset>
+                        <label>Ingredientes: </label><br />
+                        <input type="checkbox" name="toppings[]" value="cogumelos">Cogumelos<br />
+                        <input type="checkbox" name="toppings[]" value="ananas">Ananás<br />
+                        <input type="checkbox" name="toppings[]" value="fiambre">Fiambre<br />
+                        <input type="checkbox" name="toppings[]" value="pimento">Pimento<br />
+
+
+                    </fieldset>
                     <input type="submit" value="Finalizar o pedido">
 
                 </form>
+            </div>
+             <div class="wrapper link">
 
-        </div>
+                <a href="{{route('pizzas.store')}}"> <- Voltar para todos os pedidos </a>
+            </div>
 
     @endsection
